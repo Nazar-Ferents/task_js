@@ -4,6 +4,9 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+
 }
 
 body{
@@ -30,9 +33,6 @@ body{
 
 }
 
-h1{
-    font-family: Inter, sans-serif;
-}
 
 /*----------------------------------------creator--------------------------------------*/
 
@@ -72,13 +72,13 @@ h1{
 input{
     width: 70%;
     border: grey solid 1px;
-    border-radius: 2px;
+    border-radius: 3px;
     padding: 2px;
     margin-right: 30px;
 }
 
 #add{
-    padding: 1px 8px;
+    padding: 2px 8px;
     background: linear-gradient(white, lightgrey);
     border: 1px solid grey;
     border-radius: 3px;
@@ -97,20 +97,19 @@ input{
 
 /*----------------------------------------section_two-------------------------------------------------*/
 
-
-#label_listBox{
+#div_listBox{
+    width: 100%;
     display: flex;
-    justify-content: flex-start;
     align-items: flex-start;
     flex-direction: row;
-    width: 100%;
 }
+
+
 select{
     height:300px;
     width: 70%;
     border: grey solid 1px;
-    border-radius: 2px;
-    resize: none;
+    border-radius: 3px;
     overflow: hidden;
     padding: 2px;
     margin-right: 30px;
@@ -129,7 +128,7 @@ select{
     background: linear-gradient(white, lightgrey);
     border: 1px solid grey;
     border-radius: 3px;
-    padding: 1px 8px;
+    padding: 2px 8px;
 }
 
 
