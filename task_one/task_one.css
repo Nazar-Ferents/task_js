@@ -1,0 +1,146 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background: #3c88d5;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--------------------------------------------wrapper--------------------------------------*/
+
+#wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background: #f6f2f2;
+    height: 80vh;
+    width: 40vw;
+    border-radius: 5px;
+    padding:30px;
+    gap: 30px;
+
+}
+
+h1{
+    font-family: Inter, sans-serif;
+}
+
+/*----------------------------------------creator--------------------------------------*/
+
+#creator {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+
+
+}
+
+.label_title{
+    color: grey;
+    font-size: 12px;
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+/*----------------------------------------section_one-------------------------------------------------*/
+
+#label_input{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+}
+input{
+    width: 70%;
+    border: grey solid 1px;
+    border-radius: 2px;
+    padding: 2px;
+    margin-right: 30px;
+}
+
+#add{
+    padding: 1px 8px;
+    background: linear-gradient(white, lightgrey);
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+
+
+#add:hover{
+    background: lightgrey;
+}
+#add:active{
+    transform: scale(0.95);
+}
+
+
+
+
+/*----------------------------------------section_two-------------------------------------------------*/
+
+
+#label_listBox{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+}
+select{
+    height:300px;
+    width: 70%;
+    border: grey solid 1px;
+    border-radius: 2px;
+    resize: none;
+    overflow: hidden;
+    padding: 2px;
+    margin-right: 30px;
+
+
+}
+
+#wrapper_for_buttons{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap:10px;
+}
+
+#section_two button{
+    background: linear-gradient(white, lightgrey);
+    border: 1px solid grey;
+    border-radius: 3px;
+    padding: 1px 8px;
+}
+
+
+#section_two button:hover{
+    background: lightgrey;
+}
+#section_two button:active{
+    transform: scale(0.95);
+}
+
+#delete{
+    margin-top: 10px;
+}
+
