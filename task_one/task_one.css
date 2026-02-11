@@ -25,8 +25,8 @@ body{
     align-items: flex-start;
     flex-direction: column;
     background: #f6f2f2;
-    height: 80vh;
-    width: 40vw;
+    height: 80%;
+    width: 40%;
     border-radius: 5px;
     padding:30px;
     gap: 30px;
@@ -47,7 +47,7 @@ body{
 
 }
 
-.label_title{
+.title{
     color: grey;
     font-size: 12px;
 }
@@ -62,7 +62,7 @@ body{
 
 /*----------------------------------------section_one-------------------------------------------------*/
 
-#label_input{
+#div_input{
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
