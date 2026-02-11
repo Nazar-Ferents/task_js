@@ -20,7 +20,6 @@ add.onclick = function(ev) {
         let [name, value] = name_value_pair.value.split('=').map(value => value.trim())
 
 
-        function check(name,value){
 
             let array = JSON.parse(localStorage.getItem('creator')) || []
             let finder = array.find(item => item.name === name && item.value === value);
@@ -33,9 +32,6 @@ add.onclick = function(ev) {
                 localStorage.setItem('creator', JSON.stringify(array))
             }
 
-
-        }
-        check(name,value)
 
     }
 }
