@@ -35,6 +35,43 @@ fetch('https://jsonplaceholder.typicode.com/users')
                                        bs: ${user.company.bs}
                                `;
 
+    let post_of_current_user = document.createElement('button')
+    post_of_current_user.classList.add('post_of_current_user');
+    post_of_current_user.innerText = `post of current user`
+
+    info_user.appendChild(post_of_current_user);
+
+    let postsContainer = document.createElement('div');
+    postsContainer.classList.add('postsContainer');
+    info_user.appendChild(postsContainer);
+
+
+    post_of_current_user.onclick = (ev) => {
+        ev.preventDefault();
+
+        fetch(`https://jsonplaceholder.typicode.com/users/${user.id}/posts`)
+        .then(res => res.json())
+        .then(postsArray => {
+
+            postsContainer.innerHTML = '';
+
+            for (let post of postsArray) {
+                let titleOfPost = document.createElement('h2');
+                titleOfPost.classList.add('title');
+                titleOfPost.innerText = `${post.title}`;
+
+                let linkOfPost = document.createElement('a');
+                linkOfPost.classList.add('linkOfPost');
+                linkOfPost.innerText = `Full Information about this post`;
+                linkOfPost.href = `post=details.html?id=${post.id}`;
+
+                postsContainer.append(titleOfPost,linkOfPost);
+            }
+
+        })
+    }
+
+
 })
 
 // "id": 1,

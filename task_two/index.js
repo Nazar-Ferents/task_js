@@ -2,6 +2,7 @@
 
 let usersDiv = document.querySelector('#users');
 
+
 fetch('https://jsonplaceholder.typicode.com/users')
 .then(res => res.json())
 .then(usersArray => {
