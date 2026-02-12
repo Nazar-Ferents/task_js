@@ -39,11 +39,9 @@ fetch('https://jsonplaceholder.typicode.com/users')
     post_of_current_user.classList.add('post_of_current_user');
     post_of_current_user.innerText = `post of current user`
 
-    info_user.appendChild(post_of_current_user);
-
     let postsContainer = document.createElement('div');
     postsContainer.classList.add('postsContainer');
-    info_user.appendChild(postsContainer);
+    info_user.append(post_of_current_user,postsContainer);
 
 
     post_of_current_user.onclick = (ev) => {
