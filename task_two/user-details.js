@@ -41,7 +41,8 @@ fetch('https://jsonplaceholder.typicode.com/users')
 
     let postsContainer = document.createElement('div');
     postsContainer.classList.add('postsContainer');
-    info_user.append(post_of_current_user,postsContainer);
+
+    document.body.append(post_of_current_user,postsContainer);
 
 
     post_of_current_user.onclick = (ev) => {
@@ -54,16 +55,21 @@ fetch('https://jsonplaceholder.typicode.com/users')
             postsContainer.innerHTML = '';
 
             for (let post of postsArray) {
-                let titleOfPost = document.createElement('h2');
+
+                let postContainer = document.createElement('div');
+                postContainer.classList.add('postContainer');
+
+                let titleOfPost = document.createElement('h4');
                 titleOfPost.classList.add('title');
                 titleOfPost.innerText = `${post.title}`;
 
                 let linkOfPost = document.createElement('a');
                 linkOfPost.classList.add('linkOfPost');
                 linkOfPost.innerText = `Full Information about this post`;
-                linkOfPost.href = `post=details.html?id=${post.id}`;
+                linkOfPost.href = `post-details.html?id=${post.id}`;
 
-                postsContainer.append(titleOfPost,linkOfPost);
+                postContainer.append(titleOfPost,linkOfPost);
+                postsContainer.appendChild(postContainer);
             }
 
         })
