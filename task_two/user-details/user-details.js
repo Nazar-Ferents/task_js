@@ -66,7 +66,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
                 let linkOfPost = document.createElement('a');
                 linkOfPost.classList.add('linkOfPost');
                 linkOfPost.innerText = `Full Information about this post`;
-                linkOfPost.href = `post-details.html?id=${post.id}`;
+                linkOfPost.href = `../post-details/post-details.html?id=${post.id}`;
 
                 postContainer.append(titleOfPost,linkOfPost);
                 postsContainer.appendChild(postContainer);
